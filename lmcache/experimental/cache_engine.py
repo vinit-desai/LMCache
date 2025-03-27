@@ -287,7 +287,7 @@ class LMCacheEngineBuilder:
         raises: ValueError if the instance already exists with a different
             configuration.
         """
-        logger.info(f"Creating LMCacheEngine instance {instance_id}")
+        logger.info(f"Creating LMCacheEngine instance {instance_id} with config {config}")
         if instance_id not in cls._instances:
             memory_allocator = cls._Create_memory_allocator(config, metadata)
             token_database = cls._Create_token_database(config, metadata)
