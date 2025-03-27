@@ -27,6 +27,7 @@ class LMCacheEngine:
             match the current configuration
         """
 
+	logger.info("Initializing LMCacheEngine...")
         self.config = config
         self.metadata = metadata
         self.chunk_size = config.chunk_size
